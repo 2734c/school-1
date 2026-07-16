@@ -42,6 +42,45 @@ body{
   0 0 50px rgba(0,255,100,.08);
 }
 
+button{
+  margin-top:25px;
+  padding:14px 28px;
+  border:none;
+  border-radius:30px;
+
+  background:linear-gradient(
+    90deg,
+    #00f7ff,
+    #00ff99
+  );
+
+  color:#000;
+  font-weight:bold;
+  cursor:pointer;
+
+  transition:all .3s ease;
+
+  animation:neonPulse 2s infinite ease-in-out;
+
+  box-shadow:
+    0 0 10px rgba(0,247,255,.6),
+    0 0 20px rgba(0,247,255,.4),
+    0 0 30px rgba(0,255,153,.3);
+}
+
+button:hover{
+  transform:translateY(-2px) scale(1.05);
+
+  box-shadow:
+    0 0 20px rgba(0,247,255,.9),
+    0 0 40px rgba(0,247,255,.8),
+    0 0 70px rgba(0,255,153,.7);
+}
+
+button:active{
+  transform:scale(.97);
+}
+
 h1{
   font-size:3rem;
   margin-bottom:20px;
@@ -171,41 +210,3 @@ ul li{
 
 }
 
-button{
-  margin-top:25px;
-  padding:14px 28px;
-  border:none;
-  border-radius:30px;
-
-  background:linear-gradient(
-    90deg,
-    #00f7ff,
-    #00ff99
-  );
-
-  color:#000;
-  font-weight:bold;
-  cursor:pointer;
-
-  transition:all .3s ease;
-
-  animation:neonPulse 2s infinite ease-in-out;
-
-  box-shadow:
-    0 0 10px rgba(0,247,255,.6),
-    0 0 20px rgba(0,247,255,.4),
-    0 0 30px rgba(0,255,153,.3);
-}
-
-button:hover{
-  transform:translateY(-2px) scale(1.05);
-
-  box-shadow:
-    0 0 20px rgba(0,247,255,.9),
-    0 0 40px rgba(0,247,255,.8),
-    0 0 70px rgba(0,255,153,.7);
-}
-
-button:active{
-  transform:scale(.97);
-}
