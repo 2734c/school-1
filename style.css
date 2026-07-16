@@ -84,16 +84,7 @@ ul li{
   border-radius:15px;
 }
 
-button{
-  margin-top:25px;
-  padding:14px 28px;
-  border:none;
-  border-radius:30px;
-  background:linear-gradient(90deg,#00f7ff,#00ff99);
-  color:#000;
-  font-weight:bold;
-  cursor:pointer;
-}
+
 
 .controls{
   position:fixed;
@@ -147,4 +138,74 @@ button{
   .card{
     padding:30px;
   }
+}
+
+@keyframes neonPulse{
+
+  0%{
+    opacity:.75;
+
+    box-shadow:
+      0 0 5px rgba(0,247,255,.4),
+      0 0 10px rgba(0,247,255,.3),
+      0 0 20px rgba(0,255,153,.2);
+  }
+
+  50%{
+    opacity:1;
+
+    box-shadow:
+      0 0 20px rgba(0,247,255,.9),
+      0 0 40px rgba(0,247,255,.8),
+      0 0 80px rgba(0,255,153,.8);
+  }
+
+  100%{
+    opacity:.75;
+
+    box-shadow:
+      0 0 5px rgba(0,247,255,.4),
+      0 0 10px rgba(0,247,255,.3),
+      0 0 20px rgba(0,255,153,.2);
+  }
+
+}
+
+button{
+  margin-top:25px;
+  padding:14px 28px;
+  border:none;
+  border-radius:30px;
+
+  background:linear-gradient(
+    90deg,
+    #00f7ff,
+    #00ff99
+  );
+
+  color:#000;
+  font-weight:bold;
+  cursor:pointer;
+
+  transition:all .3s ease;
+
+  animation:neonPulse 2s infinite ease-in-out;
+
+  box-shadow:
+    0 0 10px rgba(0,247,255,.6),
+    0 0 20px rgba(0,247,255,.4),
+    0 0 30px rgba(0,255,153,.3);
+}
+
+button:hover{
+  transform:translateY(-2px) scale(1.05);
+
+  box-shadow:
+    0 0 20px rgba(0,247,255,.9),
+    0 0 40px rgba(0,247,255,.8),
+    0 0 70px rgba(0,255,153,.7);
+}
+
+button:active{
+  transform:scale(.97);
 }
