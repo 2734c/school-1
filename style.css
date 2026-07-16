@@ -237,29 +237,24 @@ h2{
 }
 
 
-/* 클릭 가능한 박스 */
+e;
+}
 
 .toggle-box{
   cursor:pointer;
-  transition:all .3s ease;
-}
+  transition:all .2s ease;
 
-/* OFF 상태 */
-
-.toggle-box{
   background:rgba(255,255,255,.05);
   border:1px solid rgba(255,255,255,.15);
 }
 
-/* ON 상태 */
+/* 마우스를 누르고 있는 동안 */
 
-.toggle-box.active{
+.toggle-box:active{
 
   background:rgba(0,255,120,.25);
 
   border:1px solid #00ff99;
-
-  color:#ffffff;
 
   transform:scale(1.05);
 
