@@ -35,3 +35,13 @@ window.goHome = function() {
 };
 
 showSlide(0);
+
+document.querySelectorAll(".toggle-box").forEach(box => {
+
+  box.addEventListener("click", () => {
+
+    box.classList.toggle("active");
+
+  });
+
+});
